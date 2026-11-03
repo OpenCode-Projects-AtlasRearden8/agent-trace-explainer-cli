@@ -1,0 +1,9 @@
+{"role":"user","content":"Deploy the site"}
+
+this line is not json at all
+
+{"role":"assistant","tool_calls":[{"id":"d1","type":"function","function":{"name":"bash","arguments":"{\"cmd\": \"./deploy.sh\"}"}}]}
+{"role":"tool","tool_call_id":"d1","name":"bash","content":"Error: deploy script missing env var SITE_URL","is_error":true}
+{"role":"assistant","tool_calls":[{"id":"d2","type":"function","function":{"name":"bash","arguments":"{\"cmd\": \"SITE_URL=example.com ./deploy.sh\"}"}}]}
+{"role":"tool","tool_call_id":"d2","name":"bash","content":"deployed 5 files"}
+{"totally": "unknown", "shape": true}

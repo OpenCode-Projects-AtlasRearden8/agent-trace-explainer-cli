@@ -1,0 +1,4 @@
+{"role":"assistant","model":"llama3.2","content":"Thinking...","usage":{"prompt_eval_count":245,"eval_count":61}}
+{"role":"assistant","tool_calls":[{"id":"w1","type":"function","function":{"name":"web_fetch","arguments":"{\"url\": \"https://example.com/article\"}"}}],"usage":{"prompt_eval_count":310,"eval_count":75}}
+{"role":"tool","tool_call_id":"w1","name":"web_fetch","content":"<html>Article body...</html>"}
+{"role":"assistant","content":"Here is the gist of the article: it argues agents need better timing controls.","usage":{"prompt_eval_count":388,"eval_count":92,"cost":0.0125}}
